@@ -2,21 +2,46 @@ Fundamentals Exercise 1: CLI
      Perform the following tasks using the CLI and copy and paste the commands and results below
 
      1. Navigate to CodingNomads folder (or the space you have create for this project)
+     cd C:\Users\mbmps\Documents\CodingNomads\labs\online-java-fundamentals
      2. Create new folder Terminal_testing
+     mkdir Terminal_testing
      3. Inside of folder Terminal_testing,
          a. create 3 new .txt files all with different names
+            touch Test1.txt Test2.txt Test3.txt
+
          b. print the directory path
+            pwd
+            C:\Users\mbmps\Documents\CodingNomads\Terminal_testing
+
          c. list the contents of the folder
+         C:\Users\mbmps\Documents\CodingNomads\Terminal_testing
+                  λ ls -al
+                  total 4
+                  drwxr-xr-x 1 mbmps 197613 0 Apr 28 12:40 ./
+                  drwxr-xr-x 1 mbmps 197613 0 Apr 28 12:39 ../
+                  -rw-r--r-- 1 mbmps 197613 0 Apr 28 12:40 Test1.txt
+                  -rw-r--r-- 1 mbmps 197613 0 Apr 28 12:40 Test2.txt
+                  -rw-r--r-- 1 mbmps 197613 0 Apr 28 12:40 Test3.txt
      5. Inside of folder Terminal_testing, create a new folder
+        mkdir aNewFolder
      6. Copy a file from Terminal_testing to the new folder
+        cp Test1.txt aNewFolder
      7. Move a different file from Terminal_testing to the new folder
+        mv differentFile.txt aNewFolder
      8. Demonstrate removing:
          a. A file
+         rm Test1.txt
          b. A folder
+         rm -r aNewFolder
      9. CHALLENGE:
          a. Use $ vim to write some text inside a file
+         vim Test2.txt
          b. Use $ cat print contents of file
+         λ cat Test2.txt
+         this is a comment
          c. Use $ grep to search for a word inside file
+         git grep hello
+         Test2.txt:hello world are you awake?
 
 Example Output:
     1. cd ~/Documents/CodingNomads/

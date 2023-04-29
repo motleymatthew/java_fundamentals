@@ -7,13 +7,25 @@ Initializing git folder
     2. Inside git_practice:
         a. Initialize folder as a git folder (make sure you are in the correct folder when initializing) by running
             the "git init" command within the git_practice folder.
+            C:\Users\mbmps\Documents\CodingNomads\git_practice
+            λ git init
+            Initialized empty Git repository in C:/Users/mbmps/Documents/CodingNomads/git_practice/.git/
         b. Make new file
+        touch touchy.txt
         c. Add file
+        git add touchy.txt
         d. Commit file
+        git commit -m "commiting touchy"
+        [master (root-commit) 5618142] commiting touchy
+         1 file changed, 0 insertions(+), 0 deletions(-)
+         create mode 100644 touchy.txt
         c. On Github, create new git_practice repository
+        https://github.com/motleymatthew/git_practice
         d. Add this new GitHub repository as a new "remote" to your local Git repo. You can do this by using the command
             git remote add <ANY_NAME> <URL_OF_NEW_GITHUB_REPO.git>
+        git remote add git_practice https://github.com/motleymatthew/git_practice.git
         d. Push commit file to Github
+        git push git_practice master
         e. Practice the following git flow until you feel comfortable:
             i.   Create or modify file
             ii.  Add file(s)
@@ -22,13 +34,28 @@ Initializing git folder
 
 Adding a remote
     1. Create new personal repository on Github named "git_practice_2".
+    https://github.com/motleymatthew/git_practice2
     2. On local machine, add the new remote address to the same git repo you were working with in the previous section above
         (directions are provided on Github with new repo is created)
+    git remote add git_practice2 https://github.com/motleymatthew/git_practice.git
     3. Push local git repository to your Github using the new remote.
+    git push git_practice2 master
 
 Cloning repository from Github
     1. Find a repository on Github
+     https://github.com/TheAlgorithms/Java.git
     2. Clone repository to local machine
+    git clone https://github.com/TheAlgorithms/Java.git
+    Cloning into 'Java'...
+    remote: Enumerating objects: 11571, done.
+    remote: Counting objects: 100% (306/306), done.
+    remote: Compressing objects: 100% (213/213), done.
+    remote: Total 11571 (delta 56), reused 263 (delta 26), pack-reused 11265
+    Receiving objects: 100% (11571/11571), 3.43 MiB | 7.15 MiB/s, done.
+    Resolving deltas: 100% (5854/5854), done.
     3. Create new repository on Github
+    https://github.com/motleymatthew/git_practice3
     4. Add new remote on local machine
+    git remote add git_practice3 https://github.com/motleymatthew/git_practice3.git
     5. Push to new Github repository
+    git push git_practice3 master
