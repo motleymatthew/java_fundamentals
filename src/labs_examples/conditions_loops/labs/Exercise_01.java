@@ -24,6 +24,11 @@ public class Exercise_01 {
         int number = scanner.nextInt();
 
         // write completed code here
-
+        //Divides the number by two and if the remainder is 0 it's even.
+        if(number % 2 ==0 ){
+            System.out.println(number +" is even");
+        }else{
+            System.out.println(number + " is odd");
+        }
     }
 }
