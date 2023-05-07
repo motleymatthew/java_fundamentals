@@ -1,6 +1,6 @@
 package labs_examples.arrays.labs;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * Arrays calculator
@@ -13,5 +13,18 @@ import java.util.Arrays;
  */
 
 public class Exercise_01 {
+    public static void main(String[] args) {
+        Scanner nums = new Scanner(System.in);
+        int[] numbers = new int[10];
+        int sum = 0;
+//-------Having trouble finding the sum of array numbers
+        for(int i = 0;i < numbers.length;i++){
+            System.out.print("Enter number: ");
+            numbers[i] = nums.nextInt();
+            sum = sum + numbers[i];
 
+        }
+        System.out.println(sum);
+        System.out.println(sum/numbers.length);
+    }
 }
